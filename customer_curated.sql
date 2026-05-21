@@ -10,6 +10,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS `stedi`.`customer_curated` (
   `phone` string,
   `sharewithfriendsasofdate` bigint
 )
+  
 ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe'
 WITH SERDEPROPERTIES (
   'ignore.malformed.json' = 'FALSE',
